@@ -1,0 +1,76 @@
+.c-contact-btn {
+  border: 1px solid #EEEEEE;
+  border-radius: 10px;
+  padding: 10px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 12px 19px rgba(201, 201, 201, 0.25);
+  }
+
+  @include mq(768) {
+    padding: 12px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 352px;
+  }
+}
+
+.c-contact-btn__wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;  
+}
+
+.c-contact-btn__icon {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  @include font(xmd, 50, 900);
+  text-align: center;
+  background: palette(text-color, 100);
+  border-radius: 11px;
+  color: palette(secondary);
+
+  @include mq(768) {
+    width: 60px;
+    height: 60px;
+    font-size: 35px;
+    line-height: 60px;
+  }
+
+  @include mq(1400) {
+    width: 89px;
+    height: 89px;
+    font-size: 46px;
+    line-height: 89px;
+  }
+}
+
+.c-contact-btn__text {
+  padding-left: 15px;
+
+  @include mq(768) {
+    padding-left: 20px;
+  }
+}
+
+.c-contact-btn__title {
+  @include font(sm, 24, 900);
+  @include font-family(base);
+  color: palette(primary);
+
+  @include mq(992) {
+    @include font(xmd, 30, 900);
+  }
+}
+
+.c-contact-btn__info {
+  @include font(xsm, 26, 400);
+  @include font-family(secondary);
+  color: palette(text-color);
+
+  @include mq(992) {
+    @include font(base, 30, 400);
+  }
+}

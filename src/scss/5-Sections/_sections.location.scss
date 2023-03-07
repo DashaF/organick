@@ -1,0 +1,46 @@
+.s-location {
+  padding: 50px 0 40px;
+}
+
+.s-location__wrap {
+  padding: 100px 0;
+  border-radius: 30px;
+  background-image: url('../../../img/global/location-bg.png');
+  background-size: cover;
+  background-position: center;
+
+  @include mq(768) {
+    padding: 120px 0;
+  }
+}
+
+.s-location__card {
+  padding: 15px 20px 25px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 15px;
+  max-width: 514px;
+
+  @include mq(768) {
+    padding: 45px 50px;
+    border-radius: 30px;
+  }
+
+  @include mq(992) {
+    margin: 0 0 0 auto;
+  }
+}
+
+.s-location__title {
+  @include font-family(decor);
+  @include font(md, 33, 400);
+  color: palette(secondary);
+
+  @include mq(768) {
+    @include font(lg, 40, 400);
+  }
+}
+
+.s-location__list {
+  margin-top: 20px;
+}

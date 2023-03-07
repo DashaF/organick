@@ -1,0 +1,75 @@
+.c-form {
+}
+
+.c-form__block {
+  margin-bottom: 30px;
+  padding: 0 11px;
+
+  @include mq(768) {
+    margin-bottom: 20px;
+  }
+
+  @include mq(992) {
+    margin-bottom: 30px;
+  }
+
+  label {
+    @include font(base, 21, 700);
+    @include font-family(base);
+    color: palette(primary);
+    margin-bottom: 12px;
+
+    @include mq(992) {
+      margin-bottom: 20px;
+    }
+  }
+
+  input,
+  textarea {
+    background: #FFFFFF;    
+    border-radius: 12px;
+    padding: 15px;
+    @include font(xsm, 18, 400);
+    color: palette(text-color);
+    resize: none;
+
+    @include mq(992) {
+      @include font(base, 30, 400);
+    }
+
+    &::placeholder {
+      @include font(xsm, 18, 400);
+      font-style: italic;
+      color: palette(text-color, 300);
+
+      @include mq(992) {
+        @include font(base, 21, 400);
+      }
+    }
+  }
+
+  .form-control:focus {
+    border-color: palette(secondary, 100);
+    box-shadow: 0 0 0 0.25rem rgba(palette(secondary), 0.5);
+    color: palette(text-color);
+  }
+}
+
+.c-form--border {
+  input,
+  textarea {
+    border: 1px solid palette(secondary);
+  }
+}
+
+.c-form--white {
+  input,
+  textarea {
+    border: 1px solid #fff;
+  }
+
+  .form-control:focus {
+    border-color: palette(secondary, 100);
+    box-shadow: 0 0 0 0.25rem rgba(palette(secondary, 100), 0.5);
+  }
+}

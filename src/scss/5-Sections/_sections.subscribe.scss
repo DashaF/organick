@@ -1,0 +1,76 @@
+.s-subscribe {
+  padding: 60px 0;
+}
+
+.s-subscribe__wrap {
+  background-image: url('../../../img/global/subscribe-bg.png');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 25px;
+  border-radius: 30px;
+
+  @include mq(768) {
+    padding: 80px 30px;
+  }
+
+  @include mq(992) {
+    padding: 105px 70px;
+  }
+}
+
+.s-subscribe__title {
+  text-align: center;
+
+
+  @include mq(768) {
+    text-align: left;
+  }
+
+  .c-intro__title {
+    color: #fff;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.15);
+  }
+}
+
+.s-subscribe__form {
+  margin: 50px 0 0;
+  display: flex;
+  width: 100%;
+
+  @include mq(768) {
+    margin: 0;
+  }
+
+  .c-form {
+    width: 100%;
+
+    @include mq(1400) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  .c-form__block {
+    padding: 0;
+
+    @include mq(768) {
+      margin-bottom: 15px;
+    }
+
+    @include mq(1400) {
+      flex-grow: 1;
+    }
+  }
+}
+
+.s-subscribe__btn {
+  text-align: center;
+
+  @include mq(768) {
+    text-align: left;
+  }
+
+  @include mq(1400) {
+    margin-left: 15px;
+  }
+}

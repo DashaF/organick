@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/28b43a2759.js" crossorigin="anonymous"></script>
+  <link rel='stylesheet' href='dist/css/styles.css' type='text/css' />
+  <title>Organick/</title>
+</head>
+<body>
+
+  <div class="o-header">
+    <div class="o-header__container">
+      <div class="o-header__wrap">
+        <a href="#" class="o-header__logo">
+          <img src="img/icons/logo.svg" alt="logo">
+        </a>
+        <nav class="o-header__menu JS-menu">
+          <ul>
+            <li>
+              <a href="#">
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>About</span>
+              </a>
+            </li>
+            <li class="JS-has-children has-children">
+              <div>
+                <a href="#">
+                  <span>Pages</span>
+                </a>
+                <span class="JS-sub-menu-toggle sub-menu-btn d-xl-none"><i class="fa-solid fa-chevron-down"></i></span>
+              </div>
+              <ul class="sub-menu JS-sub-menu">
+                <li>
+                  <a href="#">
+                    <span>Page 1</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Page 2</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Page 3</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <span>Shop</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Projects</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>News</span>
+              </a>
+            </li>
+          </ul>
+          <div class="o-header__action d-lg-none">
+            <div class="o-header__search">
+              <div class="c-search">
+                <div class="c-search__field">
+                  <input type="search">
+                </div>
+                <button class="c-search__btn"><i class="fa-solid fa-magnifying-glass"></i></button> 
+              </div>
+            </div>
+            <div class="o-header__cart d-md-none">
+              <a href="#" class="c-cart">
+                <div class="c-cart__icon">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="c-cart__text">
+                  Cart (<span>0</span>)
+                </div>
+              </a>
+            </div>
+          </div>
+        </nav>
+        <div class="o-header__search d-none d-lg-block">
+          <div class="c-search">
+            <div class="c-search__field">
+              <input type="search">
+            </div>
+            <button class="c-search__btn"><i class="fa-solid fa-magnifying-glass"></i></button> 
+          </div>
+        </div>
+        <div class="o-header__cart d-none d-md-block">
+          <a href="#" class="c-cart">
+            <div class="c-cart__icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="c-cart__text">
+              Cart (<span>0</span>)
+            </div>
+          </a>
+        </div>
+        <div class="o-header__btn JS-menu-btn">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="s-hero">
+    <div class="s-hero__bg">
+      <div class="s-hero__bg--left">
+        <img src="img/global/hero-bg-1-mob.png" alt="" class="d-md-none">
+        <img src="img/global/hero-bg-1.png" alt="" class="d-none d-md-block">
+      </div>
+      <div class="s-hero__bg--right">
+        <img src="img/global/hero-bg-2-mob.png" alt="" class="d-md-none">
+        <img src="img/global/hero-bg-2.png" alt="" class="d-none d-md-block">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+          <div class="s-hero__pat">
+            <div class="c-anim">
+              <div class="c-anim__item"
+              data-aos="fade-down-right"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out-back">
+                <img src="img/icons/hero-pt-1.svg" alt="">
+              </div>
+              <div class="c-anim__item"
+              data-aos="fade-down-left"
+              data-aos-duration="1650"
+              data-aos-easing="ease-in-out-back">
+                <img src="img/icons/hero-pt-2.svg" alt="">
+              </div>
+              <div class="c-anim__item"
+              data-aos="fade-up-right"
+              data-aos-duration="1800"
+              data-aos-easing="ease-in-out-back">
+                <img src="img/icons/hero-pt-3.svg" alt="">
+              </div>
+              <div class="c-anim__item"
+              data-aos="fade-up-left"
+              data-aos-duration="1350"
+              data-aos-easing="ease-in-out-back">
+                <img src="img/icons/hero-pt-4.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="c-intro">
+            <h1 class="c-intro__title c-intro__title--hero">Contact Us</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="s-contact">
+    <div class="container">
+      <div class="row align-items-xxl-center">
+        <div class="col-12 col-md-6">
+          <div class="s-contact__media">
+            <img src="img/global/contact.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 d-none d-md-block d-xl-none">
+          <div class="c-intro">
+            <h2 class="c-intro__title">We'd love to talk about how we can work together.</h2>
+            <div class="c-intro__description">Simply dummy text of the printing and typesetting industry. Lorem had ceased to 
+              been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-6">
+          <div class="s-contact__info">
+            <div class="c-intro d-md-none d-xl-block">
+              <h2 class="c-intro__title">We'd love to talk about how we can work together.</h2>
+              <div class="c-intro__description">Simply dummy text of the printing and typesetting industry. Lorem had ceased to 
+                been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</div>
+            </div>
+            <div class="s-contact__btns">
+              <a href="#" class="c-contact-btn">
+                <div class="c-contact-btn__wrap">
+                  <span class="c-contact-btn__icon"><i class="far fa-envelope"></i></span>
+                  <div class="c-contact-btn__text">
+                    <div class="c-contact-btn__title">Message</div>
+                    <div class="c-contact-btn__info">support@organic.com</div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="c-contact-btn">
+                <div class="c-contact-btn__wrap">
+                  <span class="c-contact-btn__icon"><i class="fas fa-phone-alt"></i></span>
+                  <div class="c-contact-btn__text">
+                    <div class="c-contact-btn__title">Contact Us</div>
+                    <div class="c-contact-btn__info">+01 123 456 789</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="s-contact__soc">
+              <a href="#" class="c-soc-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="c-soc-link">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#" class="c-soc-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="c-soc-link">
+                <i class="fab fa-pinterest"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="s-location">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="s-location__wrap" style="background-image: url(img/global/location-bg.png)">
+            <div class="row justify-content-center">
+              <div class="col-11 col-xl-10">
+                <div class="s-location__card">
+                  <div class="s-location__title">Location</div>
+                  <div class="c-intro">
+                    <h2 class="c-intro__title">Our Farms</h2>
+                    <div class="c-intro__description">Established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using.</div>
+                  </div>
+                  <div class="s-location__list">
+                    <div class="c-location">
+                      <div class="c-location__icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                      </div>
+                      <div class="c-location__address">
+                        <div class="c-location__country">New York, USA:</div>
+                        <div class="c-location__details">299 Park Avenue New York,<br>
+                          New York 10171</div>
+                      </div>
+                    </div>
+                    <div class="c-location">
+                      <div class="c-location__icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                      </div>
+                      <div class="c-location__address">
+                        <div class="c-location__country">London, UK:</div>
+                        <div class="c-location__details">30 Stamford Street,<br>
+                          London SE1 9LQ</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>                
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s-message">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-11 col-lg-10">
+          <form class="c-form c-form--border">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="c-form__block">
+                  <label for="name" class="form-label">Full Name*</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your Full Name">
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="c-form__block">
+                  <label for="email" class="form-label">Your Email*</label>
+                  <input type="text" class="form-control" id="email" placeholder="example@yourmail.com">
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="c-form__block">
+                  <label for="company" class="form-label">Company*</label>
+                  <input type="text" class="form-control" id="company" placeholder="your company name here">  
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="c-form__block">
+                  <label for="subject" class="form-label">Subject*</label>
+                  <input type="text" class="form-control" id="subject" placeholder="how can we help">  
+                </div>
+               </div>
+              <div class="col-12">
+                <div class="c-form__block">
+                  <label for="messageText" class="form-label">Message*</label>
+                  <textarea class="form-control" id="messageText" rows="7" placeholder="hello there, i would like to talk about how to..."></textarea>  
+                </div>
+              </div>
+              
+              <div class="col-12">
+                <div class="s-message__btn">
+                  <button type="submit" class="c-btn c-btn--primary">Send Message</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s-subscribe">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="s-subscribe__wrap"  style="background-image: url(img/global/subscribe-bg.png)">
+            <div class="row align-items-center">
+              <div class="col-12 col-md-6">
+                <div class="s-subscribe__title">
+                  <h2 class="c-intro__title">Subscribe to<br> our Newsletter
+                    </h2>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="s-subscribe__form">
+                  <form class="c-form c-form--white">
+                    <div class="c-form__block">
+                      <input type="text" class="form-control" id="email" placeholder="Your Email Address">
+                    </div>
+                    <div class="s-subscribe__btn">
+                      <button type="submit" class="c-btn c-btn--primary">Subscribe</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="o-footer">
+    <div class="o-footer__main">
+      <div class="container">
+        <div class="row justify-content-sm-between">
+          <div class="col-12 col-sm-auto col-md order-2 order-md-1">
+            <div class="o-footer__menu o-footer__menu--left">
+              <div class="o-footer__title">Contact Us</div>
+              <div class="o-footer__list">
+                <ul>
+                  <li>
+                    <span>Email</span> <a href="mailto:needhelp@Organia.com">needhelp@Organia.com</a>
+                  </li>
+                  <li>
+                    <span>Phone</span> <a href="tel: 666888888">666 888 888</a>
+                  </li>
+                  <li>
+                    <span>Address</span> 88 road, Brooklyn street, USA
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-xl-6 order-1 order-md-2">
+            <div class="o-footer__intro text-center">
+              <a href="#" class="o-footer__logo">
+                <img src="img/icons/logo.svg" alt="">
+              </a>
+              <div class="o-footer__info">
+                Simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum simply dummy text of the printing 
+              </div>
+              <div class="o-footer__soc-menu">
+                <a href="#" class="c-soc-link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="c-soc-link">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" class="c-soc-link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="c-soc-link">
+                  <i class="fab fa-pinterest"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-auto col-md  order-3">
+            <div class="o-footer__menu">
+              <div class="o-footer__title">Utility Pages</div>
+              <div class="o-footer__list">
+                <ul>
+                  <li>
+                    <a href="#">Style Guide</a>
+                  </li>
+                  <li>
+                    <a href="#">404 Not Found</a>
+                  </li>
+                  <li>
+                    <a href="#">Password Protected</a>
+                  </li>
+                  <li>
+                    <a href="#">Licences</a>
+                  </li>
+                  <li>
+                    <a href="#">Changelog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="o-footer__copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="o-footer__copyright-text">
+              Copyright © <a href="#">Organick</a> | Designed by <a href="#">VictorFlow</a> Templates - Powered by <a href="#">Webflow</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="dist/js/scripts.min.js"></script>
+
+</body>
+</html>
+

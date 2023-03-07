@@ -1,0 +1,180 @@
+.o-footer {
+  padding: 30px 0 20px;
+
+  @include mq(768) {
+    padding: 60px 0 20px;
+  }
+}
+
+.o-footer__main {
+  padding-bottom: 20px;
+
+  @include mq(768) {
+    padding-bottom: 100px;
+  }
+}
+
+.o-footer__menu {
+  display: inline-block;
+  padding: 0 0 35px 0;
+
+  @include mq(768) {
+    display: block;
+  }
+
+  @include mq(992) {
+    padding: 0 0 35px 16px;
+  }
+}
+
+.o-footer__menu--left {   
+  @include mq(768) {
+    text-align: right;
+  }
+
+  @include mq(992) {    
+    padding: 0 16px 35px 0;
+  }
+}
+
+.o-footer__title {
+  @include font(xmd, 35, 700);
+  color: palette(primary);
+  margin-bottom: 20px;
+
+  @include mq(992) {
+    @include font(md, 35, 700);
+    margin-bottom: 30px;
+  }
+}
+
+@keyframes link-anim {
+  0% {width: 0;}
+  60% {width: calc(100% + 20px);}
+  100% {width: 100%;}
+}
+
+.o-footer__list {
+  @include font-family(secondary);
+  @include font(xsm, 27, 400);
+  color: palette(text-color);
+
+  @include mq(992) {
+    @include font(base, 30, 400);
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 15px;
+
+    @include mq(768) {
+      margin-bottom: 20px;
+    }
+
+    @include mq(1650) {
+      margin-bottom: 25px;
+    }
+  }
+
+  span {
+    display: block;
+    font-weight: 700;
+  }
+
+  a {
+    color: inherit;
+    display: inline-block;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background-color: palette(secondary);
+      
+    }
+
+    &:hover,
+    &:active {
+      &:before {
+        width: 100%;
+        animation-name: link-anim;
+        animation-duration: 0.6s;
+      }
+    }
+  }
+}
+
+.o-footer__intro {  
+  padding: 0 0 25px;
+  margin-bottom: 30px;  
+  border-bottom: 1px solid #D5D5D5;
+
+  @include mq(768) {
+    padding: 0 10px 25px;
+    margin-bottom: 0;
+    border-bottom: none;
+    border-left: 1px solid #D5D5D5;
+    border-right: 1px solid #D5D5D5;
+    height: 100%;
+  }
+
+  @include mq(992) {
+    padding: 0 40px 35px;
+  }
+}
+
+.o-footer__logo {
+  display: inline-block;
+  width: 200px;
+  margin-bottom: 23px;
+}
+
+.o-footer__info {
+  @include font-family(secondary);
+  @include font(xsm, 27, 400);
+  color: palette(text-color);
+  margin-bottom: 50px;
+
+  @include mq(992) {
+    @include font(base, 30, 400);
+  }
+}
+
+.o-footer__soc-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+
+  @include mq(768) {
+    flex-wrap: wrap;
+  }
+}
+
+.o-footer__copyright {
+  padding-top: 17px;
+  border-top: 1px solid #D5D5D5;
+}
+
+.o-footer__copyright-text {
+  text-align: center;
+  @include font(xsm, 27, 400);
+  @include font-family(secondary);
+  color: palette(text-color);
+
+  @include mq(992) {
+    @include font(base, 30, 400);
+  }
+
+  a {
+    color: inherit;
+    font-weight: 700;
+
+    &:hover {
+      color: palette(primary);
+    }
+  }
+}

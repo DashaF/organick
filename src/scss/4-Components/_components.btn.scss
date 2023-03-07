@@ -1,0 +1,32 @@
+.c-btn {
+  display: inline-block;
+  text-align: center;
+  border-radius: 12px;
+  @include font(xsm, 18, 400);  
+  @include font-family(base);
+  transition: all 0.2s ease;
+
+  @include mq(992) {
+    @include font(sm, 24, 700);
+  }
+}
+
+.c-btn--primary {
+  background: palette(primary);
+  color: #ffffff;
+  border: 2px solid palette(primary);
+  padding: 15px;
+  min-width: 160px;
+  box-sizing: border-box;
+
+  &:hover,
+  &:active {
+    background: #ffffff;
+    color: palette(primary);
+  }
+
+  @include mq(992) {
+    padding: 17px;
+    min-width: 200px;
+  }
+}

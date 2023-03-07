@@ -1,0 +1,30 @@
+.c-cart {
+  width: 145px;
+  border: 1px solid #E0E0E0;
+  border-radius: 33px;
+  padding: 3px 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &:hover {
+    box-shadow: 0 5px 9px rgba(201, 201, 201, 0.35);
+  }
+}
+
+.c-cart__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  background-color: palette(primary);
+  color: #fff;
+  @include font(base, 44, 900);
+  text-align: center;
+  margin-right: 12px;
+  padding: 2px 2px 0 0;
+}
+
+.c-cart__text {
+  @include font(base, 21, 600);
+  color: palette(primary);
+}

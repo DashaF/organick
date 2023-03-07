@@ -1,0 +1,32 @@
+.c-location {
+  display: flex;
+  flex-direction: row;
+  margin-top: 22px;
+}
+
+.c-location__icon {
+  width: 38px;
+  @include font(md, 38, 900);
+  color: palette(secondary);
+  text-align: center;
+  margin-right: 6px;
+
+  @include mq(768) {
+    width: 44px;
+    @include font(lg, 44, 900);
+  }
+}
+
+.c-location__address {
+  color: palette(text-color);
+  @include font(xsm, 26, 400);
+  @include font-family(secondary);
+
+  @include mq(768) {
+    @include font(base, 30, 400);
+  }
+}
+
+.c-location__country {
+  font-weight: 700;
+}

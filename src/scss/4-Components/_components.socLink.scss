@@ -1,0 +1,23 @@
+.c-soc-link {
+  display: inline-block;
+  background: palette(secondary, 100);
+  color: palette(primary);
+  @include font(xmd, 3, 900);
+  padding: 10px;
+  width: 50px;
+  border-radius: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:active {
+    background: rgba(palette(secondary), 0.4);
+    color: palette(primary);
+    box-shadow: 0 2px 3px rgba(201, 201, 201, 0.45);
+  }
+
+  @include mq(992) {
+    @include font(xmd, 40, 900);
+    width: 60px;
+  }
+}

@@ -1,0 +1,34 @@
+/**
+ *  Global color variables.
+ *	The underscore Never use them directly in the styles, only for functions and mixins.
+ */
+
+ $_color-primary-500: #274C5B !default;
+
+ $_color-secondary-500: #7EB693 !default;
+ $_color-secondary-100: #EFF6F1 !default;
+
+ $_color-text-500: #525C60 !default;
+ $_color-text-300: #ABABAB !default;
+ $_color-text-100: #F4F4F4 !default;
+ 
+ /**
+  *  Organize color variables in a Sass Map.
+  *  This way, the colors can be iterated, are more organized, and are more intuitive to reference.
+  */
+ $palettes: (
+         'primary': (
+                 base: $_color-primary-500,
+         ),
+         'secondary': (
+                 base: $_color-secondary-500,
+                 100: $_color-secondary-100,
+         ),
+         'text-color': (
+                 base: $_color-text-500,
+                 300: $_color-text-300,
+                 100: $_color-text-100,
+         ),
+ );
+
+ 

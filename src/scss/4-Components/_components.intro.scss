@@ -1,0 +1,32 @@
+.c-intro {
+  .s-hero & {
+    position: relative;
+  }
+}
+
+.c-intro__title {
+  @include font-family(base);
+  @include font(lg, 42, 900);
+  color: palette(primary);
+
+  @include mq(992) {
+    @include font(xl, 58, 900);
+  }
+}
+
+.c-intro__title--hero {
+  @include mq(992) {
+    @include font(xxl, 82, 900);
+  }
+}
+
+.c-intro__description {
+  @include font-family(secondary);
+  @include font(xsm, 24, 400);
+  color: palette(text-color);
+  margin-top: 14px;
+
+  @include mq(992) {
+    @include font(base, 30, 400);
+  }
+}
